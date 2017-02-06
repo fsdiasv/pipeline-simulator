@@ -3,10 +3,10 @@ Simulador que apresenta as soluções da execução de instruções em pipeline 
 
 ## Descrição do Simulador
 O simulador comtém seis (6) unidades funcionais que podem ter conflito estrutural:
-1. Unidade de Ponto Flutuante de Add/Subtract.
+1. [Unidade de Ponto Flutuante de Add/Subtract]
 2. Unidade de Ponto Flutuante de Multiply
-3. Unidade de Ponto Flutuante de Divide.
-4. Unidade de Inteiro Add/Subtract.
+3. Unidade de Ponto Flutuante de Divide
+4. Unidade de Inteiro Add/Subtract
 5. Unidade de Inteiro Multiply
 6. Unidade de Inteiro Divide
 
