@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pipeline Simulator</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Pipeline Simulator</h3>
+            <p>Simulador que apresenta as soluções da execução de instruções em
+                pipeline de forma gráfica, desenvolvido para a disciplina de
+                Arquitetura de Computadores II - DCC/UFLA.</p>
+
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Configurações do Simulador
+                </div>
+
+                <div class="panel-body">
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Latência das Instruções</div>
+
+                            <table class="table latencia-table">
+                                <tr>
+                                    <th width="50%">Instrução</th>
+                                    <th>Latência</th>
+                                </tr>
+                                <tr>
+                                    <td>PF - Add/Subtract</td>
+                                    <td>
+                                        <div class="input-group ciclos-input">
+                                            <span class="input-group-addon" id="latencia-pf-addsub">#</span>
+                                            <input type="text" class="form-control" placeholder="Ciclos" aria-describedby="basic-addon1">
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>PF - Multiply</td>
+                                    <td>
+                                        <div class="input-group ciclos-input">
+                                            <span class="input-group-addon" id="latencia-pf-mult">#</span>
+                                            <input type="text" class="form-control" placeholder="Ciclos" aria-describedby="basic-addon1">
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>PF - Divide</td>
+                                    <td>
+                                        <div class="input-group ciclos-input">
+                                            <span class="input-group-addon" id="latencia-pf-div">#</span>
+                                            <input type="text" class="form-control" placeholder="Ciclos" aria-describedby="basic-addon1">
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>INT - Add/Subtract</td>
+                                    <td>
+                                        <div class="input-group ciclos-input">
+                                            <span class="input-group-addon" id="latencia-int-addsub">#</span>
+                                            <input type="text" class="form-control" placeholder="Ciclos" aria-describedby="basic-addon1">
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>INT - Multiply</td>
+                                    <td>
+                                        <div class="input-group ciclos-input">
+                                            <span class="input-group-addon" id="latencia-int-mult">#</span>
+                                            <input type="text" class="form-control" placeholder="Ciclos" aria-describedby="basic-addon1">
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>INT - Divide</td>
+                                    <td>
+                                        <div class="input-group ciclos-input">
+                                            <span class="input-group-addon" id="latencia-int-div">#</span>
+                                            <input type="text" class="form-control" placeholder="Ciclos" aria-describedby="basic-addon1">
+                                        </div>
+                                    </td>
+                                </tr>
+
+                          </table>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                                <option disabled>Modo de execução</option>
+                                <option>Sem adiantamento</option>
+                                <option>Com adiantamento</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1">#</span>
+                            <input type="text" class="form-control" placeholder="Número de instruções do bloco básico" aria-describedby="basic-addon1">
+                        </div>
+
+                        <button type="button" class="btn btn-primary btn-block executar-button">Executar!</button>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <select class="form-control instrucao" id="instrucao">
+                                <option disabled>Instrução</option>
+                                <option>ADD.D</option>
+                                <option>SUB.D</option>
+                                <option>MULT.D</option>
+                                <option>DIV.D</option>
+                                <option>L.D</option>
+                                <option>S.D</option>
+                                <option>ADD</option>
+                                <option>DADDUI</option>
+                                <option>SUBI</option>
+                                <option>MULT</option>
+                                <option>DIV</option>
+                                <option>LW</option>
+                                <option>SW</option>
+                                <option>BEQ</option>
+                                <option>BNEZ</option>
+                            </select>
+                            <select class="form-control reg" id="rt">
+                                <option disabled>RT</option>
+                                <option>F1</option>
+                                <option>F2</option>
+                            </select>
+                            <select class="form-control reg" id="rs">
+                                <option disabled>RS</option>
+                                <option>F1</option>
+                                <option>F2</option>
+                            </select>
+                            <select class="form-control reg" id="rd">
+                                <option disabled>RD</option>
+                                <option>F1</option>
+                                <option>F2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

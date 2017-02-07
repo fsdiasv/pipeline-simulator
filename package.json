@@ -1,0 +1,27 @@
+{
+  "name": "pipeline-simulator",
+  "version": "0.0.1",
+  "description": "\"Simulador que apresenta as soluções da execução de instruções em pipeline de forma gráfica\"",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fsdiasv/pipeline-simulator.git"
+  },
+  "keywords": [
+    "pipeline",
+    "simulator"
+  ],
+  "author": "Felipe Dias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fsdiasv/pipeline-simulator/issues"
+  },
+  "homepage": "https://github.com/fsdiasv/pipeline-simulator#readme"
+}

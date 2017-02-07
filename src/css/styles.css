@@ -1,0 +1,13 @@
+.reg {
+    display: inline;
+    width: 20%;
+}
+
+.instrucao {
+    display: inline;
+    width: 30%;
+}
+
+.executar-button {
+    margin-top: 20px;
+}
